@@ -1,5 +1,8 @@
 import {TEST} from 'actionTypes/test';
 
-export const test = ()=> ({
-type: TEST
+export const test = info => ({
+type: TEST,
+payload: {
+  info
+}
 });

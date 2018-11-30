@@ -3,3 +3,5 @@ package-lock.json
 /dist/
 .vscode
 yarn.lock
+npm-debug.log
+readme.md

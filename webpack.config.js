@@ -2,6 +2,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const path = require('path');
 
+
 module.exports = {
   devServer: {
   contentBase: path.join(__dirname, './dist'),
@@ -37,23 +38,56 @@ module.exports = {
           }
         ]
       },
-      {
-        test: /\.scss$/,
-        use: ExtractTextPlugin.extract({
-          fallback: "style-loader",
-          use: "css-loader!sass-loader",
-        })
-      }
-    ]
+  //     {
+  //       test: /\.scss$/,
+  //       use: ExtractTextPlugin.extract({
+  //         fallback: "style-loader",
+  //         use: [
+  //           {
+  //             loader: 'css-loader',
+  //             options:{
+  //               modules: true,
+  //               sourseMap: true,
+  //               importLoaders:2,
+  //               localIdentName: '[name]__[local]__[hash:base64:5]'
+  //              }
+  //             },
+  //             "sass-loader"
+  //          ]
+  //         })
+  //   },
+  {
+    test: /\.scss$/,
+    exclude: /node_modules/,
+    use: ExtractTextPlugin.extract({
+        fallback: 'style-loader',
+
+        // Could also be write as follow:
+        // use: 'css-loader?modules&importLoader=2&sourceMap&localIdentName=[name]__[local]___[hash:base64:5]!sass-loader'
+        use: [
+            {
+                loader: 'css-loader',
+                query: {
+                    modules: true,
+                    sourceMap: true,
+                    importLoaders: 2,
+                    localIdentName: '[name]__[local]___[hash:base64:5]'
+                }
+            },
+            'sass-loader'
+        ]
+    }),
   },
+  ]
+},
   resolve: {
     modules: ['node_modules', path.resolve(__dirname, 'src') ]
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: "./src/index.html",
+      template: "./dist/index.html",
       filename: "./index.html"
     }),
-    new ExtractTextPlugin('style.css')
+    new ExtractTextPlugin("style.css"),
   ]
 }

@@ -1,13 +1,13 @@
 import {TEST} from 'actionTypes/test';
 
 const initialState = {
-    test: false
+    info: "text info"
   };
   
-  export default function error(state = initialState, action) {
+  export default function test(state = initialState, action) {
     switch (action.type) {
       case TEST:
-        return { ...state, test: true};
+        return { ...state, info: action.payload.info};
       default:
         return state;
     }
