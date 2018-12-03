@@ -4,7 +4,7 @@ import { createStore, applyMiddleware, compose } from 'redux';
 import thunk from 'redux-thunk';
 import rootReducer from 'reducers';
 import { Provider } from 'react-redux';
-import {Test} from 'containers';
+import SectionHeader from './components/SectionHeader';
 
 
 const middlewares = [thunk];
@@ -22,7 +22,7 @@ if (module.hot) {
 }
 const App = () => (
   <div>
-  <Test/>
+  <SectionHeader/>
   </div>
 )
 
