@@ -3,9 +3,9 @@ import  styles from './Navigation.scss';
 
 const Link = props => {
     const url = "/" + props.label.toLowerCase().trim().replace(" ","-")
-    return (<div>
+    return (<li className={styles.nav_list}>
             <a href={url}>{props.label}</a>
-         </div>
+         </li>
     )
 }
 
@@ -18,7 +18,7 @@ const Logo = props => {
 }
 const HeadButton = props => {
   return(
-    <button>Let`s Talk</button>
+    <div className={styles.nav_button}>Let`s Talk</div>
   )
 }
 
@@ -32,9 +32,10 @@ const Navigation = props => {
     return( 
     <header className={styles.head}>
       <Logo/>
-        {menus.map((value,index) => {
-          return <div key={index}><Link label={value}/> </div>
+       <ul >{menus.map((value,index) => {
+          return <Link key={index} label={value}/>
                   })}
+        </ul>
         <HeadButton/>
     </header>
 )}

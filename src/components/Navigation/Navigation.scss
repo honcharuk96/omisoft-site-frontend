@@ -1,14 +1,68 @@
 .head{
-  width: 96%;
-  margin: 0 auto;
+  // width: 96%;
+  margin: 0 150px;
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
   align-items: center;
 }
+.head ul{
+  display: flex;
+  flex: auto;
+  flex-direction: row;
+  margin: 0;
+}
 .headLogo{
-  color: #ff4c59;
-  font-size: 3em;
   margin-right: 60px;
-  font-weight: 700
+  background-image: url(assets/logo.svg);
+  background-repeat:no-repeat; 
+  width: 12%;
+  height: 40px;
+}
+.nav_list {
+  list-style: none;
+  padding-right: 20px;
+  color: #ffffff;
+
+}
+.nav_list a{
+  color: #ffffff;
+  text-decoration: none;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 2;
+  letter-spacing: normal;
+  color: #ffffff;
+}
+.nav_list a:hover{
+  font-size: 16px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 2;
+  letter-spacing: normal;
+  color: #8187a7;
+}
+.nav_button{
+  background: none;
+  color: #ffffff;
+  border: 0;
+  text-decoration: #ffffff;
+  border-bottom: 2px solid;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 2;
+  letter-spacing: normal;
+  text-align: right;
+}
+.nav_button:hover{
+  border: 2px solid white;
+  border-radius: 28px; 
+  padding: 4px 24px;
 }

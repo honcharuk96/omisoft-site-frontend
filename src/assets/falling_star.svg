@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="175px" height="147px" viewBox="0 0 175 147" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.1 (67048) - http://www.bohemiancoding.com/sketch -->
+    <title>falling_star</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="157.970563 122.021606 150.545942 128.273864 156.798199 120.849242 150.545942 113.424621 157.970563 119.676879 165.395184 113.424621 159.142926 120.849242 165.395184 128.273864"></polygon>
+        <filter x="-142.5%" y="-113.9%" width="385.0%" height="385.0%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="6" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="10" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.215686275   0 0 0 0 0.160784314   0 0 0 0 0.447058824  0 0 0 0.336701766 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <linearGradient x1="21.6291313%" y1="-9.27908044%" x2="100%" y2="100%" id="linearGradient-3">
+            <stop stop-color="#041050" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="falling_star" transform="translate(-1.000000, 0.000000)">
+            <g>
+                <g id="Star" opacity="0.300000012" transform="translate(157.970563, 120.849242) rotate(-299.000000) translate(-157.970563, -120.849242) ">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                    <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                </g>
+                <path d="M157.803388,119.230184 C140.670319,95.4456516 128.6419,79.9828334 121.718131,72.8417291 C113.902947,64.7812275 103.585781,55.601413 90.7666332,45.3022855 C33.9425152,14.1310499 4.09339872,-0.758948841 1.21928379,0.6322893 C-1.65483113,2.02352744 22.2831397,21.479431 73.0331962,59 C90.245413,72.2772371 102.247166,81.1365423 109.038456,85.5779157 C145.305461,109.295842 157.803388,124.343508 157.803388,124.343508 C157.803388,124.343508 157.803388,122.639067 157.803388,119.230184 Z" id="Path-17" fill="url(#linearGradient-3)" opacity="0.049999997"></path>
+            </g>
+        </g>
+    </g>
+</svg>

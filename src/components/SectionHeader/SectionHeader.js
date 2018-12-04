@@ -13,6 +13,11 @@ const SectionHeader = props => {
       <div className={styles.stars1}></div>
       <div className={styles.stars2}></div>
       <div className={styles.stars3}></div>
+      <div className={styles.mainCloud}></div>
+      <div className={styles.mainCloud_right}></div>
+      <div className={styles.mainCloud_right2}></div>
+      <div className={styles.mainCloud_left}></div>
+      <div className={styles.mainCloud_center}></div>
     </section>
   )
 }

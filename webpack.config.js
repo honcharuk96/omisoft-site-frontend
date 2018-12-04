@@ -78,10 +78,20 @@ module.exports = {
         ]
     }),
   },
+  {
+    test: /\.(ttf|eot|svg|jpe?g|png|gif)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
+    loader: 'file-loader'
+},
   ]
 },
   resolve: {
-    modules: ['node_modules', path.resolve(__dirname, 'src') ]
+    modules: ['node_modules', path.resolve(__dirname, 'src') ],
+    alias: {
+      components: path.resolve(__dirname, 'src/components'),
+      assets: path.resolve(__dirname, 'src/assets'),
+      actions: path.resolve(__dirname, 'src/actions'),
+      containers: path.resolve(__dirname, 'src/containers'),
+     }
   },
   plugins: [
     new HtmlWebpackPlugin({

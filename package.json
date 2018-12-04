@@ -41,6 +41,7 @@
   },
   "devDependencies": {
     "@babel/plugin-proposal-export-default-from": "^7.0.0",
-    "@babel/preset-react": "^7.0.0"
+    "@babel/preset-react": "^7.0.0",
+    "file-loader": "^2.0.0"
   }
 }

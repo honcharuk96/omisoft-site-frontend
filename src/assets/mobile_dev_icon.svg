@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="44px" height="44px" viewBox="0 0 44 44" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.1 (67048) - http://www.bohemiancoding.com/sketch -->
+    <title>mobile_dev_icon</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="mobile_dev_icon">
+            <g>
+                <rect id="Rectangle" fill="#FFB22F" x="26.0408163" y="15.2653061" width="17.9591837" height="28.7346939" rx="4"></rect>
+                <circle id="Oval" fill="#FFF5E4" cx="35.0204082" cy="38.6122449" r="1.79591837"></circle>
+                <path d="M33.2244898,12.5714286 L28.3469388,12.5714286 C25.585515,12.5714286 23.3469388,14.8100048 23.3469388,17.5714286 L23.3469388,40.4081633 L4,40.4081633 C1.790861,40.4081633 2.705415e-16,38.6173023 0,36.4081633 L0,4 C-2.705415e-16,1.790861 1.790861,4.05812251e-16 4,0 L29.2244898,0 C31.4336288,1.55629733e-15 33.2244898,1.790861 33.2244898,4 L33.2244898,12.5714286 Z" id="Combined-Shape" fill="#FFB22F"></path>
+                <g id="Group-6" transform="translate(11.673469, 7.183673)" stroke="#FFF5E4" stroke-width="3">
+                    <path d="M0.897959184,0.897959184 C16.462585,15.8639456 24.244898,23.3469388 24.244898,23.3469388" id="Path-21"></path>
+                    <path d="M0,8.08163265 L0,1.79591837 C0,0.804060041 0.804060041,0 1.79591837,0 L8.08163265,0" id="Rectangle" stroke-linecap="round"></path>
+                    <path d="M17.0612245,24.244898 L17.0612245,17.9591837 C17.0612245,16.9673253 17.8652845,16.1632653 18.8571429,16.1632653 L25.1428571,16.1632653" id="Rectangle" stroke-linecap="round" transform="translate(21.102041, 20.204082) scale(-1, -1) translate(-21.102041, -20.204082) "></path>
+                </g>
+                <rect id="Rectangle" fill="#FFF5E4" x="13.5068027" y="33.2244898" width="3.49829932" height="3.59183673" rx="1.74914966"></rect>
+            </g>
+        </g>
+    </g>
+</svg>
