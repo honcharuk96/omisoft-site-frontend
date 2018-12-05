@@ -1,0 +1,55 @@
+
+.mainCloud{
+  background-image: url(assets/cloud_main_screen.png);
+  // background-image: url(assets/roket.png);
+  background-repeat:no-repeat; 
+  width: 100%;
+  height: 436px;
+  position: absolute;
+  top: 79%;
+  z-index: 5;
+}
+.mainCloud_right{
+  background-image: url(assets/cloud_3.png);
+  // background-image: url(assets/roket.png);
+  background-repeat:no-repeat; 
+  background-position: right;
+  width: 100%;
+  height: 413px;
+  position: absolute;
+  top: 80%;
+  z-index: 4;
+}
+.mainCloud_right2{
+  background-image: url(assets/cloud_2.png);
+  // background-image: url(assets/roket.png);
+  background-repeat:no-repeat; 
+  background-position: center;
+  width: 100%;
+  height: 413px;
+  position: absolute;
+  top: 79%;
+  z-index: 6;
+}
+.mainCloud_left{
+  background-image: url(assets/cloud_1.png);
+  // background-image: url(assets/roket.png);
+  background-repeat:no-repeat; 
+  background-position: left;
+  width: 100%;
+  height: 413px;
+  position: absolute;
+  top: 78%;
+  z-index: 3;
+}
+.mainCloud_center{
+  background-image: url(assets/cloud_4.png);
+  // background-image: url(assets/roket.png);
+  background-repeat:no-repeat; 
+  background-position: right;
+  width: 100%;
+  height: 413px;
+  position: absolute;
+  top: 75%;
+  z-index: 3;
+}

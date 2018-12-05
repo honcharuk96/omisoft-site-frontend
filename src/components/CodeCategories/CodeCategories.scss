@@ -1,0 +1,43 @@
+.head{
+  height: 300px;
+  display: flex;
+  margin: 88px 0 0 0;
+  justify-content: space-around;
+}
+.block{
+  width: 12%;
+  text-align: center;
+}
+.imageCategories{
+  display: flex;
+  justify-content: center;
+}
+.absoluteIcon{
+  position: absolute;
+    padding: 27px;
+}
+span{
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: center;
+  color: #2f2f2f;
+  display: block;
+  margin: 16px 0 0 0;
+}
+h3{
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: center;
+  color: #2f2f2f;
+  margin: 64px 0 0 0;
+}

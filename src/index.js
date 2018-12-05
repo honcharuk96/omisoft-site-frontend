@@ -5,6 +5,13 @@ import thunk from 'redux-thunk';
 import rootReducer from 'reducers';
 import { Provider } from 'react-redux';
 import SectionHeader from './components/SectionHeader';
+import SectionCode from './components/SectionCode';
+import SectionTechnologies from './components/SectionTechnologies';
+
+import Navigation from 'components/Navigation/';
+import AboutMisoft from 'components/AboutMisoft/';
+import Cloud from 'components/Cloud/Cloud';
+import Stars from 'components/Stars';
 
 
 const middlewares = [thunk];
@@ -22,7 +29,19 @@ if (module.hot) {
 }
 const App = () => (
   <div>
-  <SectionHeader/>
+  {/* <SectionHeader/> */}
+  <Stars>
+      <Navigation/>
+      <AboutMisoft/>
+      <Cloud/>
+  </Stars>
+  <SectionCode/>
+  {/* <SectionTechnologies/> */}
+  <Stars
+   customStyle={{ height: '100px' }} 
+  >
+
+  </Stars>
   </div>
 )
 

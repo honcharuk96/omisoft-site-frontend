@@ -1,0 +1,26 @@
+.codeInformation h1{
+  font-family: Montserrat;
+  font-size: 48px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: center;
+  color: #2f2f2f;
+}
+.codeInformation {
+  display: flex;
+  flex-direction: column;
+}
+.codeInformation span{
+  font-family: Montserrat;
+  font-size: 20px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.6;
+  letter-spacing: normal;
+  text-align: center;
+  color: #2f2f2f;
+}
