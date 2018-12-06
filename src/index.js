@@ -9,9 +9,13 @@ import SectionCode from './components/SectionCode';
 import SectionTechnologies from './components/SectionTechnologies';
 
 import Navigation from 'components/Navigation/';
-import AboutMisoft from 'components/AboutMisoft/';
+import AboutOmisoft from 'components/AboutOmisoft/';
 import Cloud from 'components/Cloud/Cloud';
 import Stars from 'components/Stars';
+import SectionPortfolio from './components/SectionPortfolio/SectionPortfolio';
+import SectionAbout from './components/SectionAbout/SectionAbout';
+import ContactForm from './components/ContactForm/ContactForm';
+import SectionContact from './components/SectionContact/SectionContact';
 
 
 const middlewares = [thunk];
@@ -32,16 +36,17 @@ const App = () => (
   {/* <SectionHeader/> */}
   <Stars>
       <Navigation/>
-      <AboutMisoft/>
+      <AboutOmisoft/>
       <Cloud/>
   </Stars>
   <SectionCode/>
   {/* <SectionTechnologies/> */}
-  <Stars
-   customStyle={{ height: '100px' }} 
-  >
-
-  </Stars>
+  <Stars/>
+  <SectionPortfolio/>
+  <SectionAbout/>
+  <Stars>
+    <SectionContact/>
+    </Stars>
   </div>
 )
 

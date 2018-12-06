@@ -1,0 +1,65 @@
+.contactForm {
+  width: 30%;
+}
+.contactForm form{
+  display: flex;
+  flex-direction:column; 
+}
+form input{
+  background-color: transparent;
+  border: 0;
+  border-bottom: 1px solid white ;
+  opacity: 0.5;
+  height: 60px;
+  font-size: 20px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.6;
+  letter-spacing: normal;
+  color: #ffffff;
+  outline: 0;
+}
+form input:focus{
+  opacity: 1;
+}
+form{
+  color: white
+}
+.checkBox{
+  display: flex;
+
+}
+.allBlockCheckBox{
+  margin: 40px 0 0 0 ;
+  opacity: 0.6;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.6;
+  letter-spacing: normal;
+  color: #ffffff;
+}
+.checkBox_select{
+  display: flex;
+  align-items: center
+}
+.checkBox_select label {
+  opacity: 0.8;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #ffffff;
+}
+.checkBox input{
+  width: 40px;
+  height: 40px;
+  outline: 8px;
+  background-color: rgba(255, 255, 255, 0.2);
+}

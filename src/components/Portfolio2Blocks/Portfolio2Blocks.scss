@@ -1,0 +1,14 @@
+.head{
+  display: flex;
+  flex-direction: row;
+}
+.block{
+  display: flex;
+  flex-direction: column;
+}
+.block img{
+  width: 100%
+}
+.block h3{
+  margin: 0;
+}
