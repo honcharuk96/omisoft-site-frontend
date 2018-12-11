@@ -1,0 +1,21 @@
+.setionTechnologiesMain{
+  display: flex;
+  margin: 150px 0 0 150px;
+
+}
+ .wrap{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+
+ }
+ .cloudTechnologies{
+  background-image: url(assets/cloud_technologies.png);
+  background-repeat: no-repeat;
+  width: 29%;
+  height: 128px;
+  position: absolute;
+  bottom: 0%;
+  z-index: 6;
+  left: 71%;
+ }

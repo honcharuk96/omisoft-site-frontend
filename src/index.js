@@ -16,6 +16,9 @@ import SectionPortfolio from './components/SectionPortfolio/SectionPortfolio';
 import SectionAbout from './components/SectionAbout/SectionAbout';
 import ContactForm from './components/ContactForm/ContactForm';
 import SectionContact from './components/SectionContact/SectionContact';
+import SectionFooter from 'components/SectionFooter';
+import AboutTechnologies from 'components/AboutTechnologies';
+import TechnologiesProgram from 'components/TechnologiesProgram'
 
 
 const middlewares = [thunk];
@@ -39,14 +42,22 @@ const App = () => (
       <AboutOmisoft/>
       <Cloud/>
   </Stars>
+
   <SectionCode/>
   {/* <SectionTechnologies/> */}
-  <Stars/>
+  
+  <Stars>
+<SectionTechnologies/>
+    </Stars>
+
   <SectionPortfolio/>
   <SectionAbout/>
   <Stars>
+  
     <SectionContact/>
     </Stars>
+<SectionFooter/>
+
   </div>
 )
 

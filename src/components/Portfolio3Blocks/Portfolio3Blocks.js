@@ -30,9 +30,12 @@ const Portfolio3Blocks = props => {
                   <div>
                     <img src={value.icon} />
                   </div>
-                  <h3>{value.title}</h3>
-                  <span >{value.body}</span>
-                 </div>
+                  <div className={styles.portfolioText}>
+                    <h3>{value.title}</h3>
+                    <span >{value.body}</span>
+                    <div className={styles.readMore}>Read More</div>
+                  </div>
+                </div>
         })}
      </div>
 )}

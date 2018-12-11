@@ -6,26 +6,33 @@ const ContactForm = props => {
   return (
   <div className={styles.contactForm}>
     <form>
-
+      <div className={styles.contactForm_container}>
       <input type={'text'} placeholder={'Your Name'}/>
       <input type={'text'} placeholder={'Your Surname'}/>
+      </div>
       <input type={'email'} placeholder={'Email adress'}/>
-      <input type={'number'} placeholder={'Phone'}/>
+      <input type={'tel'} placeholder={'Phone'}/>
       <input type={'text'} placeholder={'Summary of your project'}/>
       <div className={styles.allBlockCheckBox}>What can we help you with?</div>
         <div className={styles.checkBox}>
           <div className={styles.checkBox_select}>
-            <input type="checkbox" name="Mobile Dev"/>
-            <label htmlFor="Mobile Dev">Mobile Dev</label>
+             <label className={styles.container}>Mobile Dev
+              <input type="checkbox"/>
+              <span className={styles.checkmark}></span>
+             </label>
           </div>  
           <div className={styles.checkBox_select}>
-            <input type="checkbox"name="Web Dev"/>
-            <label htmlFor="Web Dev">Web Dev</label>
+            <label  className={styles.container}>Web Dev
+              <input type="checkbox"/>
+              <span className={styles.checkmark}></span>
+            </label>
           </div>  
-          <div className={styles.checkBox_select}>
-            <input type="checkbox" name="UI/UX"/>
-            <label htmlFor="UI/UX">UI/UX</label>
-          </div>  
+          <div className={styles.checkBox_select}>      
+            <label  className={styles.container}>UI/UX
+              <input type="checkbox"/>
+              <span className={styles.checkmark}></span>
+            </label>  
+          </div>   
         </div>
         <OrangeButton buttonText={'Contact Us'}/>
       </form>

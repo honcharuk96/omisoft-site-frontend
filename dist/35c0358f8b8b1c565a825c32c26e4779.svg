@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.1 (67048) - http://www.bohemiancoding.com/sketch -->
+    <title>web_dev_icon</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="web_dev_icon">
+            <g>
+                <rect id="Rectangle" fill="#934CD9" x="0" y="0" width="34" height="33.8461538" rx="4"></rect>
+                <rect id="Rectangle" fill="#F5EDFD" x="17" y="24.6153846" width="12" height="3.07692308" rx="1.5"></rect>
+                <polyline id="Path-22" stroke="#F5EDFD" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" points="7 14.3589744 13 20.5128205 7 26.6666667"></polyline>
+                <rect id="Rectangle" fill="#F5EDFD" x="0" y="5.12820513" width="34" height="3.07692308"></rect>
+                <path d="M36.6375443,6.20437667 C38.5436618,6.5096813 40,8.16169072 40,10.1538462 L40,36 C40,38.209139 38.209139,40 36,40 L10,40 C7.96764401,40 6.28930043,38.4842926 6.03370134,36.52161 C6.637241,36.780015 7.30191354,36.9230769 8,36.9230769 L32,36.9230769 C34.7614237,36.9230769 37,34.6845007 37,31.9230769 L37,8.07692308 C37,7.41479675 36.8712973,6.78273054 36.6375443,6.20437667 Z" id="Combined-Shape" fill="#934CD9"></path>
+            </g>
+        </g>
+    </g>
+</svg>

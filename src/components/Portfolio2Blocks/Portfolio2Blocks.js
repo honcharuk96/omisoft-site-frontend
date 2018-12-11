@@ -19,16 +19,21 @@ const Portfolio2Blocks = props => {
   console.log(blocks);
   return( 
  
-    <div className={styles.head}>{blocks.map((value,index) => {
+    <div className={styles.head}>
+    {blocks.map((value,index) => {
       return <div className={styles.block} key={index}>
-      <div className={styles.imageCategories}>
-      <img src={value.icon} />
-      </div>
-      <h3>{value.title}</h3>
-    <span >{value.body}</span>
-    </div>
-              })}
-    </div>
+                <div>
+                  <img src={value.icon} />
+                </div>
+                <div className={styles.portfolioText}>
+                  <h3>{value.title}</h3>
+                  <span >{value.body}</span>
+                  <div className={styles.readMore}>Read More 
+                  </div>
+                </div>
+              </div>
+      })}
+   </div>
 )}
 
 

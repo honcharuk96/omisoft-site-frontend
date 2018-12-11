@@ -1,0 +1,64 @@
+ .rounds2,  .rounds4,  .rounds6{
+  width: 138px;
+  height: 138px;
+  box-shadow: 0 8px 16px 0 rgba(29, 32, 38, 0.3);
+  background-color: #ffffff;
+  border-radius: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.rounds1,.rounds3,.rounds5{
+  width: 100px;
+  height: 100px;
+  box-shadow: 0 8px 16px 0 rgba(29, 32, 38, 0.3);
+  background-color: #ffffff;
+  border-radius: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.allRounds{
+  display: flex;
+  position: relative;
+}
+.allRounds div{
+  position: absolute;
+}
+.rounds1{
+  top: -130px;
+  right: -250px;
+}
+.rounds1 img {
+  transform: scale(0.025);
+}
+.rounds2{
+right: 300px;
+}
+.rounds2 img {
+  transform: scale(0.2);
+}
+.rounds3{
+  top: 165px;
+  left: -300px;
+}
+.rounds3 img{
+  transform: scale(0.25);
+}
+.rounds4{
+  bottom: -300px;
+  left: -400px;
+  // background-image: url(assets/Java_Logo.svg.png);
+}
+.rounds4 img {
+  transform: scale(0.04);
+}
+.rounds5{
+bottom: -200px;
+}
+.rounds5 img{
+  transform: scale(0.025);
+}
+.rounds6 img{
+  transform: scale(0.1);
+}

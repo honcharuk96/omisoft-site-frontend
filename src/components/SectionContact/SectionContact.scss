@@ -4,3 +4,14 @@
   flex-direction: row;
   justify-content: space-around;
 }
+.contactCloud{
+  background-image: url(assets/cloud_footer.png);
+  background-repeat: no-repeat;
+  width: 80%;
+  height: 284px;
+  position: absolute;
+  bottom: -9%;
+  z-index: 6;
+  right: 40%;
+  transform: scale(0.5);
+}

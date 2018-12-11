@@ -21,7 +21,8 @@ root {
 
 .first {
   background-image: linear-gradient($darkBlue, $lightBlue);
-  min-height: 800px;
+	min-height: 800px;
+	position: relative;
 }
 
 .stars1 {

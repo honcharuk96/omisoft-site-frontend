@@ -8,6 +8,7 @@ const SectionContact = props => {
   <div className={styles.main}>
   <ContactInfo/>
     <ContactForm/>
+    <div className={styles.contactCloud}></div>
   </div>
   )
 }
