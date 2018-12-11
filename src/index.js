@@ -19,6 +19,7 @@ import SectionContact from './components/SectionContact/SectionContact';
 import SectionFooter from 'components/SectionFooter';
 import AboutTechnologies from 'components/AboutTechnologies';
 import TechnologiesProgram from 'components/TechnologiesProgram'
+import PrivacyPolicy from './components/PrivacyPolicy/PrivacyPolicy';
 
 
 const middlewares = [thunk];
@@ -35,7 +36,7 @@ if (module.hot) {
   });
 }
 const App = () => (
-  <div>
+  <div className='body'>
   {/* <SectionHeader/> */}
   <Stars>
       <Navigation/>
@@ -57,7 +58,7 @@ const App = () => (
     <SectionContact/>
     </Stars>
 <SectionFooter/>
-
+<PrivacyPolicy/>
   </div>
 )
 

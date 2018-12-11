@@ -4,7 +4,7 @@ import OrangeButton from '../OrangeButton/OrangeButton';
 
 const AboutOmisoft = props => {
   return (
-    <div className={styles.aboutOmisoft}>
+    <div  id="Home" className={styles.aboutOmisoft}>
       <div className={styles.aboutOmisoft_description}>
         <h1 className={styles.aboutOmisoft_title}>We develop apps & sites that users love!</h1>
           <div className={styles.aboutOmisoft_description_info}>

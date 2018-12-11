@@ -30,6 +30,8 @@ root {
   height: .5rem;
   transition: all .2s linear;
   width: .5rem;
+  filter: blur(1px);
+  border-radius: 41%;
 }
 
 .stars2 {
@@ -37,6 +39,8 @@ root {
   height: .3rem;
   transition: all .2s linear;
   width: .3rem;
+  filter: blur(1px);
+  border-radius: 41%;
 }
 
 .stars3 {

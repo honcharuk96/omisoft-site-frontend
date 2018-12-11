@@ -8,11 +8,12 @@ import TechnologiesProgram from '../TechnologiesProgram/TechnologiesProgram';
 const SectionTechnologies = props => {
   return (
     <section className={styles.setionTechnologiesMain}>
-    {/* <SectionHeader/> */}
+     {/* <div className={styles.topWave}></div> */}
     <div className={styles.wrap}>
-    <AboutTechnologies/>
-    <TechnologiesProgram/>
-    <div className={styles.cloudTechnologies}></div>
+       <AboutTechnologies/>
+       <TechnologiesProgram/>
+       <div className={styles.cloudTechnologies}></div>
+       {/* <div className={styles.bottomWave}></div> */}
     </div>
     </section>
   )

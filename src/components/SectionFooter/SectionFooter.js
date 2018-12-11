@@ -2,6 +2,36 @@ import React from 'react';
 import  styles from './SectionFooter.scss';
 import Navigation from 'components/Navigation'
 
+
+const Link = props => {
+  const url = "/" + props.label.toLowerCase().trim().replace(" ","-")
+  return (<li className={styles.nav_listFoo}>
+          <div onClick={() => {
+            let elem = document.getElementById(props.label);
+            console.log(elem);
+            elem.scrollIntoView();
+          }}>{props.label}</div>
+       </li>
+  )
+}
+const Menu = props => {
+    const menus = [
+        "Home",
+        "Portfolio",
+        "Blog",
+        "Careers"
+    ]
+    return( 
+    <div className={styles.footerMenu}>
+      <div className={styles.label}>
+      Menu
+      </div>
+       <ul >{menus.map((value,index) => {
+          return <Link key={index} label={value}/>
+                  })}
+        </ul>
+    </div>
+)}
 const GetInTouch = props => {
 return(
   <div className={styles.getInTouch}>
@@ -19,10 +49,10 @@ const DropUs = props => {
       <h4>Drop us as a line!</h4>
       <div className={styles.social}>
         <div className={styles.socialLink}>
-        in
+        <a href={'/'}>in </a>
         </div>
         <div className={styles.socialLink}>
-         f
+        <a href={'/'}>f </a>
         </div>
         <div className={styles.socialLink}>
               </div>
@@ -36,21 +66,14 @@ const Logo = props => {
     <div className={styles.logo}></div>
   )
 }
-const Privacy = props => {
-  return(
-    <div className={styles.privacyall}>
-      <div className={styles.privacy_omisoft}>OMISOFT LLC. All rights reserverd. 2018</div>
-      <div className={styles.privacy}>Privacy policy</div>
-    </div>
-  )
-}
+
 const SectionFooter = props => {
   return(
     <section className={styles.footerContainer}>
     <Logo/>
+    <Menu/>
     <GetInTouch/>
     <DropUs/>
-<Privacy/>
     </section>
 
     

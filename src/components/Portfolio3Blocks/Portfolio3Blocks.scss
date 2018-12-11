@@ -3,19 +3,29 @@
   flex-direction: row;
   margin: 150px 0 0 0;
 }
-.block{
+
+.portfolio3BlocksBody{
   display: flex;
   flex-direction: column;
   // padding: 1px;
+  &>div {
+    &:hover {
+      background-color: #f77b62;
+      // margin: 150px
+      border-radius: 0;
+      box-shadow: none;
+      background-color: #ffffff;
+    }
+  }
 }
-.block img{
+.bodyIcon{
   width: 100%
 }
-.block h3{
+.portfolio3BlocksBody h3{
   margin: 0;
 }
 
-.block :hover{
+.portfolio3BlocksBody :hover{
   display: flex;
   flex-direction: column;
   // border: 1px solid red;

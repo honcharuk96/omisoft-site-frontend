@@ -119,6 +119,18 @@ form{
   border: 0.04em solid white;
 }
 
+.checkmarkDisabled {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  // background-color: rgba(247, 123, 98, 1);
+  background-color: rgba(255, 255, 255, 0.2);
+  border: 0.04em solid white;
+}
+
 /* On mouse-over, add a grey background color */
 .container:hover input ~ .checkmark {
   border: 0.04em solid rgba(247, 123, 98, 1);

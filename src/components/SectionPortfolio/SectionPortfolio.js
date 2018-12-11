@@ -7,7 +7,7 @@ import Portfolio3Blocks from '../Portfolio3Blocks/Portfolio3Blocks';
 
 const SectionPortfolio = props => {
   return (
-    <section className={styles.main}>
+    <section id='Portfolio' className={styles.main}>
     <div className={styles.text}>
       <h3>Our Portfolio</h3>
       <span>

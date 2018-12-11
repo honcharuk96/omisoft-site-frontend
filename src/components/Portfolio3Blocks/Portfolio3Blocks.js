@@ -26,9 +26,9 @@ const Portfolio3Blocks = props => {
  
      <div className={styles.head}>
       {blocks.map((value,index) => {
-        return <div className={styles.block} key={index}>
+        return <div className={styles.portfolio3BlocksBody} key={index}>
                   <div>
-                    <img src={value.icon} />
+                    <img src={value.icon} className={styles.bodyIcon}/>
                   </div>
                   <div className={styles.portfolioText}>
                     <h3>{value.title}</h3>

@@ -16,7 +16,7 @@ class SectionAbout extends React.Component {
 
   render() {
     return(
-      <div className={styles.about}>
+      <div id="Blog" className={styles.about}>
       <AboutInfo/>
         <AboutSlider/>
      </div>
