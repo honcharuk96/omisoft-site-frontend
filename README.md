@@ -1,8 +1,7 @@
-# webpack-react-boilerplate
+# Guide To Project Initiation
 
-### React v.16.6
+## 1) `sudo npm i`
 
-### Webpack v.4
+### 2) `npm run build`
 
-### Babel v.7
 

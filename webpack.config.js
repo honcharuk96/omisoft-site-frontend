@@ -19,7 +19,7 @@ module.exports = {
   },
   output: {
     filename: 'bundle.js',
-    publicPath: '/',
+    publicPath: '',
   },
   module: {
     rules: [
@@ -96,7 +96,7 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       template: "./dist/index.html",
-      filename: "./index.html"
+      filename: "index.html"
     }),
     new ExtractTextPlugin("style.css"),
   ]
