@@ -15,7 +15,7 @@ class TechnologiesProgram extends Component {
 
   onScroll = (e) => {
     this.setState({
-      blockShift: Math.min(Math.max(-100, this.state.blockShift - e.deltaY / 4), 100),
+      blockShift: Math.min(Math.max(-50, this.state.blockShift - e.deltaY / 4), 50),
     });
     // console.log(this.state.blockShift);
   }
@@ -31,22 +31,22 @@ class TechnologiesProgram extends Component {
           <circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow" />
         </svg> */}
         <div className={styles.rounds1}>
-         <img src={require('../../assets/Kotlin.png')}/>
+         <img src={require('../../assets/Kotlin-logo.svg')}/>
         </div>
         <div className={styles.rounds2}>
-         <img src={require('../../assets/Spring.png')}/>
+         <img src={require('../../assets/Spring.svg')}/>
         </div>
         <div className={styles.rounds3}>
-         <img src={require('../../assets/react.png')}/>
+         <img src={require('../../assets/reactivex.svg')}/>
         </div>
         <div className={styles.rounds4}>
-         <img src={require('../../assets/Swift.png')}/>
+         <img src={require('../../assets/swift.svg')}/>
         </div>
         <div className={styles.rounds5}>
-         <img src={require('../../assets/Kotlin.png')}/>
+         <img src={require('../../assets/Kotlin-logo.svg')}/>
         </div>
         <div className={styles.rounds6}>
-          <img src={require('../../assets/Java.png')}/>
+          <img src={require('../../assets/Java_Logo.svg')}/>
         </div>
       </div>
       )

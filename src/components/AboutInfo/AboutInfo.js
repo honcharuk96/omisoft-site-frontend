@@ -28,7 +28,7 @@ class AboutInfo extends Component {
   }
 
   updateNews(tag) {
-    console.log('NEWS UPDATING', tag);
+    // console.log('NEWS UPDATING', tag);
 
     axios.get(`http://ualegion.com:9999/api/v1/blog/posts/tag?tag=${tag}&page=0&size=10`).then(responce => {
       this.setState({

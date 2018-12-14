@@ -26,39 +26,44 @@
   position: absolute;
 }
 .rounds1{
-  top: -130px;
-  right: -250px;
+  top: 80px;
+  right: 90px;
 }
 .rounds1 img {
-  transform: scale(0.025);
 }
 .rounds2{
-right: 300px;
+  right: 600px;
+  top: 100px;
 }
 .rounds2 img {
-  transform: scale(0.2);
+  width: 70px;
 }
 .rounds3{
-  top: 165px;
-  left: -300px;
+  top: 400px;
+  right: 710px
 }
 .rounds3 img{
-  transform: scale(0.25);
+  width: 60px;
 }
 .rounds4{
-  bottom: -300px;
-  left: -400px;
-  // background-image: url(assets/Java_Logo.svg.png);
+  bottom: 50px;
+  right: 750px;
 }
+  // background-image: url(assets/Java_Logo.svg.png);
+
 .rounds4 img {
-  transform: scale(0.04);
 }
 .rounds5{
-bottom: -200px;
+  bottom: 100px;
+  right: 300px;
 }
 .rounds5 img{
-  transform: scale(0.025);
+
+}
+.rounds6{
+  right: 230px;
+  top: 250px;
 }
 .rounds6 img{
-  transform: scale(0.1);
+
 }

@@ -49,12 +49,13 @@ const DropUs = props => {
       <h4>Drop us as a line!</h4>
       <div className={styles.social}>
         <div className={styles.socialLink}>
-        <a href={'/'}>in </a>
+        <a href={'/'} className={styles.in}></a>
         </div>
         <div className={styles.socialLink}>
-        <a href={'/'}>f </a>
+        <a href={'/'} className={styles.f}></a>
         </div>
         <div className={styles.socialLink}>
+        <a href={'/'} className={styles.t}></a>
               </div>
       </div>
     </div>

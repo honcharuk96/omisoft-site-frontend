@@ -1,41 +1,49 @@
 .setionTechnologiesMain{
   display: flex;
-  margin: 150px 0 0 150px;
+  // margin: 150px 0 0 0;
+  position: relative;
 
 }
  .wrap{
    display: flex;
    flex-direction: row;
    justify-content: space-between;
+   width: 100%;
+   height: 800px;
 
  }
  .cloudTechnologies{
   background-image: url(assets/cloud_technologies.png);
   background-repeat: no-repeat;
   width: 29%;
-  height: 128px;
+  height: 110px;
   position: absolute;
   bottom: 0%;
   z-index: 6;
   left: 71%;
+  clip: rect(0px, auto, auto, 100px);
  }
-//  .bottomWave{
-//   background-image: url(assets/wave.png);
-//   background-repeat: no-repeat;
-//   width: 29%;
-//   height: 128px;
-//   position: absolute;
-//   bottom: 0%;
-//   z-index: 6;
-//   left: 71%;
-//  }
-//  .topWave{
-//   background-image: url(assets/topWave.png);
-//   width: 100%;
-//   height: 221px;
-//   position: absolute;
-//   bottom: 0%;
-//   z-index: 6;
-//   left: 0%;
-//   top: -9%;
-//  }
+ .bottomWave{
+  background-image: url(assets/bottom_wave.svg);
+  background-repeat: no-repeat;
+  width: 66%;
+  height: 128px;
+  position: absolute;
+  bottom: 0%;
+  clip: rect(0px, 885px, auto, 0px);
+  z-index: 6;
+  background-position: 50%;
+  
+ }
+ .topWave{
+  background-image: url(assets/bot_wave.svg);
+  width: 101%;
+  height: 140px;
+  position: absolute;
+  bottom: 0%;
+  z-index: 6;
+  left: -1%;
+  top: -15px;
+  background-repeat: no-repeat;
+  background-size: cover;
+ }

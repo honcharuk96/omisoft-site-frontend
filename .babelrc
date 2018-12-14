@@ -20,6 +20,7 @@
         "loose": false 
       }
     ],
-    "@babel/plugin-proposal-json-strings"
+    "@babel/plugin-proposal-json-strings",
+    "react-hot-loader/babel"
   ]
 }

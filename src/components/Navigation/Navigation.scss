@@ -4,9 +4,11 @@
   flex-flow: row nowrap;
   justify-content: space-between;
   align-items: center;
+  height: 72px;
 }
 
 .headFixed{
+  top:0;
 position: fixed;
 // margin: 0 150px;
 width: 100%;
@@ -14,14 +16,30 @@ display: flex;
 flex-flow: row nowrap;
 justify-content: space-between;
 align-items: center;
-height: 72px;
+// height: 72px;
 opacity: 0.95;
 -webkit-backdrop-filter: blur(10px);
 backdrop-filter: blur(10px);
-background-color: rgba(0,0,0,.5);
+background-color: rgba(0,0,0,.9);
 z-index: 100;
 filter: invert(1);
-margin-top: -14px;
+// margin-top: -72px;
+// transition: height 0.3s ease-in-out;
+}
+.headFixed .button:hover {
+  filter: invert(1);
+}
+
+.addHeight {
+  height: 72px;
+}
+
+.removeHeight {
+  height: 0px;
+  margin-top: -100px;
+}
+.headLogo, .nav_button, header ul{
+  overflow: hidden;
 }
 .head ul, .headFixed ul{
   display: flex;
@@ -83,7 +101,7 @@ margin-top: -14px;
   letter-spacing: normal;
   text-align: right;
   cursor: pointer;
-  margin: 0;
+  margin: 0 26px 0;
   // border: 2px solid white;
   // border-radius: 28px; 
   // padding: 4px 24px;
@@ -93,4 +111,99 @@ margin-top: -14px;
   border-radius: 28px; 
   padding: 4px 24px;
   margin:0;
+}
+.animation{
+  transition: height 0.5s linear 0s;
+}
+
+.wrapperBut{
+  // width: 100%;
+  // height: 100%;
+  margin-right: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.button{
+  width: 170px;
+  height: 50px;
+  background: transparent;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #F76E4C;
+  font-size: 18px;
+  font-weight: 800;
+  text-decoration: none;
+  position: relative;
+  transition: 0.3s,
+}
+.button span {
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 2;
+  letter-spacing: normal;
+  text-align: right;
+  color: #ffffff;
+}
+.txtBb{
+  // padding-bottom: 2px;
+  border-bottom: 2px solid #ffffff;
+  margin: 0;
+}
+.button:hover {
+  font-size: 0px;
+  transition: font-size 0.2s;
+}
+.button:hover {
+  font-size: 0;
+}
+.button:after{
+  content: 'Let\'s talk';
+  width: 0px;
+  height: 0px;
+  background: #F76E4C;
+  display: block;
+  position: absolute;
+  top: 73%;
+  left: 50%;
+  bottom: 0;
+  transition: 0.4s;
+  transition-delay: 0.1s;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 2;
+  letter-spacing: normal;
+  text-align: right;
+  color: #ffffff;
+  overflow: hidden;
+}
+/* .button:hover.button:before{
+  content: 'Let\'s talk';
+  
+} */
+.button:hover.button:after{
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top:0;
+  background-color: #F76E4C;
+  opacity: 1;
+  color: #ffffff;
+  font-size: 14px;
+    font-size: 18px;
+  font-weight: 800;
 }

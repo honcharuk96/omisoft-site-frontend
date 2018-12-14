@@ -2,38 +2,32 @@
   display: flex;
   flex-direction: row;
   margin: 150px 0 0 0;
+  height: 600px;
 }
 
-.portfolio3BlocksBody{
+.blockwrap{
   display: flex;
   flex-direction: column;
-  // padding: 1px;
-  &>div {
-    &:hover {
-      background-color: #f77b62;
-      // margin: 150px
-      border-radius: 0;
-      box-shadow: none;
-      background-color: #ffffff;
-    }
-  }
 }
-.bodyIcon{
+.blockwrap img{
   width: 100%
 }
-.portfolio3BlocksBody h3{
+.blockwrap h3{
   margin: 0;
 }
 
-.portfolio3BlocksBody :hover{
-  display: flex;
-  flex-direction: column;
-  // border: 1px solid red;
-  background-color: #f77b62;
-  // margin: 150px
+.blockwrap:hover .readMore{
+
+  display: block;
   border-radius: 8px;
   box-shadow: 0 15px 30px 0 rgba(56, 42, 115, 0.08);
-  background-color: #ffffff;
+
+}
+.blockwrap:hover{
+
+  border-radius: 8px;
+  box-shadow: 0px -7px 30px 0 rgba(56, 42, 115, 0.08)
+
 }
 .portfolioText h3{
   height: 24px;
@@ -57,6 +51,8 @@
   line-height: 1.5;
   letter-spacing: normal;
   color: #2f2f2f;
+  text-align: left;
+  padding-left: 25px; 
 }
 .readMore{
   font-family: Montserrat;
@@ -72,4 +68,5 @@
   background-image: url(assets/arrow.svg);
   background-repeat: no-repeat;
   background-position: 122px 31px;  
+  display: none;
 }

@@ -1,28 +1,34 @@
-import React from 'react';
+import React, { Fragment, PureComponent } from 'react';
+import { hot } from 'react-hot-loader';
+import cn from 'classnames';
 import  styles from './Navigation.scss';
 
-const Link = props => {
-    const url = "/" + props.label.toLowerCase().trim().replace(" ","-")
+const Link = ({ label, isFixed }) => {
+    const url = "/" + label.toLowerCase().trim().replace(" ","-")
     return (<li className={styles.nav_list}>
             <div onClick={() => {
-              let elem = document.getElementById(props.label);
+              let elem = document.getElementById(label);
               console.log(elem);
               elem.scrollIntoView();
-            }}>{props.label}</div>
+            }}>{label}</div>
          </li>
     )
 }
 
-const Logo = props => {
+const Logo = ({ isFixed }) => {
   return(
-    <div className={styles.headLogo}>
+    <div className={styles.headLogo }>
 
     </div>
   )
 }
 const HeadButton = props => {
+  
   return(
-    <div className={styles.nav_button}><span>Let`s Talk</span></div>
+    <div className={styles.wrapperBut}>
+  <a className={styles.button} href="#"><span className={styles.txtBb}>Let's talk</span></a>
+</div>
+    // <div className={styles.nav_button}><span className={styles.nav_buttonText}>Let`s Talk</span></div>
   )
 }
 
@@ -52,7 +58,7 @@ const HeadButton = props => {
   ];
 
   // menu = React.findDOMNode(this.refs.header)
-class Navigation extends React.Component {
+class Navigation extends React.PureComponent {
 state = {
   flag: false,
   scrollTop: 0,
@@ -67,9 +73,14 @@ constructor(props){
   super (props);
 }
   componentDidMount() {
-    window.addEventListener('wheel', this.onScroll, false);
+    let flag;
+    window.addEventListener('wheel', (e) => flag = e.deltaY <= 0 , false);
     window,addEventListener('scroll', s => this.setState({scrollTop: s.target.scrollingElement.scrollTop}));
-
+    setInterval(() => {
+      this.setState({
+        flag
+      });
+    }, 500);
     
   }
 
@@ -82,17 +93,31 @@ constructor(props){
   render() {
   let {flag} = this.state;
 
-  return ( <header  className={flag && (this.state.scrollTop !== 0) ? styles.headFixed : styles.head } >
-      <Logo/>
-        <ul >{menus.map((value,index) => {
+  return ( 
+    <Fragment>
+      <header id={'header'} className={styles.head} >
+        <Logo />
+        <ul  className={cn([flag && (this.state.scrollTop !== 0) ? styles.listFixed : styles.list ])}  >{menus.map((value,index) => {
           return <Link key={index} label={value}/>})}
         </ul>
         <HeadButton/>
-    </header>
+      </header>
+      <header className={cn([styles.headFixed, flag && (this.state.scrollTop !== 0) ? styles.addHeight : styles.removeHeight, styles.animation]) } >
+        <Logo />
+        <ul  className={cn([flag && (this.state.scrollTop !== 0) ? styles.listFixed : styles.list ])}  >{menus.map((value,index) => {
+          return <Link key={index} label={value}/>})}
+        </ul>
+        <HeadButton/>
+      </header>
+      {/* <header id={'header'} className={cn([flag && (this.state.scrollTop !== 0) ? cn([styles.headFixed, styles.head]) : styles.head, styles.animation]) } >
+        <Logo />
+        <ul  className={cn([flag && (this.state.scrollTop !== 0) ? styles.listFixed : styles.list ])}  >{menus.map((value,index) => {
+          return <Link key={index} label={value}/>})}
+        </ul>
+        <HeadButton/>
+      </header> */}
+    </Fragment>
 )}
   };
 
-
-
-
-export default Navigation;
+export default hot(module)(Navigation);

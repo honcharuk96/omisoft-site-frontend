@@ -22,6 +22,7 @@
   box-shadow: 0 4px 10px 0 rgba(247, 123, 98, 0.34);
   background-color: #f77b62;
   margin-right: 24px;
+  cursor: pointer;
 }
 .social{
   display:  flex;
@@ -52,6 +53,9 @@
   padding-bottom: 5px;
   text-decoration: none;
 }
+.href a:hover{
+ text-decoration: underline;
+}
 .nav_listFoo{
   height: 30px;
   font-family: Montserrat;
@@ -67,6 +71,15 @@
 }
 .nav_listFoo:first-child{
   padding:0 0 8px 0; 
+}
+.nav_listFoo div:hover{
+  font-size: 16px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.88;
+  letter-spacing: normal;
+  color: #8187a7;
 }
 .footerMenu {
   display: flex;
@@ -86,4 +99,19 @@ margin: 0;
 .socialLink a{
   text-decoration: none;
   color: #ffffff;
+}
+.in{
+background-image: url(assets/linkedin.svg);
+}
+.f{
+  background-image: url(assets/facebook.svg);
+  }
+.t{
+  background-image: url(assets/send.svg);
+}
+.f,.t,.in{
+  height: 24px;
+  width: 22px;
+  filter: invert(1);
+  background-repeat: no-repeat;
 }

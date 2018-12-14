@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './SectionAbout.scss';
 import AboutSlider from '../AboutSlider/AboutSlider';
-import AboutInfo from '../AboutInfo/AboutInfo';
+import { AboutInfo } from 'containers';
 
 class SectionAbout extends React.Component {
    componentDidMount(){

@@ -7,13 +7,13 @@ import OrangeButton from 'components/OrangeButton';
 class ContactForm extends Component {
 
   state = {
-    company: 'Omisoft',
-    country: 'Ukraine',
-    email: 'fed.lviv@gmail.com',
-    first_name: 'Fedir',
+    company: '',
+    country: '',
+    email: '',
+    first_name: '',
     comment: '',
-    last_name: 'Pyshnyi',
-    phone: '380979421668',
+    last_name: '',
+    phone: '',
     intesrests: {
       mobile: false,
       web: false,

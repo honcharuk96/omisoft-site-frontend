@@ -22,6 +22,7 @@
     "@babel/polyfill": "^7.0.0",
     "@babel/preset-env": "^7.1.0",
     "@babel/preset-react": "^7.0.0",
+    "axios": "^0.18.0",
     "babel-loader": "^8.0.4",
     "css-loader": "^1.0.1",
     "extract-text-webpack-plugin": "^4.0.0-beta.0",
@@ -42,6 +43,7 @@
   "devDependencies": {
     "@babel/plugin-proposal-export-default-from": "^7.0.0",
     "@babel/preset-react": "^7.0.0",
-    "file-loader": "^2.0.0"
+    "file-loader": "^2.0.0",
+    "webpack-hot-middleware": "^2.24.3"
   }
 }
